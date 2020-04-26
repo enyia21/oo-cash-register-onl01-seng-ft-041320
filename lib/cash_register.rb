@@ -19,7 +19,7 @@ class CashRegister
   end
 
   def add_item(title, price, quantity=1)
-    # elf.list_of_titles << title
+    # self.list_of_titles << title
     self.total = self.total + (price * quantity)
     # @titles << title
     # @prices << price
@@ -42,3 +42,4 @@ class CashRegister
   # end
 
 end
+# 
