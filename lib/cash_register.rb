@@ -22,7 +22,7 @@ class CashRegister
     @quantities << quantity
     while quantity > 0
       @items.push(title)
-      quantity--
+      quantity-=1
     end
     @prices << price
     self.total = self.total + (price * quantity)
