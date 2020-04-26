@@ -2,9 +2,9 @@ class CashRegister
 
   attr_accessor :discount, :total, :last_transation
 
-  @titles = []
-  @prices = []
-  @quantities = []
+  @titles = Array.new
+  @prices = Array.new
+  @quantities = Array.new
 
   def initialize(discount=0)
     @total = 0
@@ -24,7 +24,7 @@ class CashRegister
   def last_transation(title, price, quantity)
     @titles << title
     @prices << price
-    @quantities << quantity
+    @quantities  << quantity
   end
 
   def apply_discount
@@ -36,8 +36,8 @@ class CashRegister
     end
   end
 
-  def void_last_transaction
-
-  end
+  # def void_last_transaction
+  # 
+  # end
 end
 #
