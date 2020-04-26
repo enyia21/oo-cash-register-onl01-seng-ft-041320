@@ -17,7 +17,7 @@ class CashRegister
     @titles
   end
   def add_item(title, price, quantity=1)
-
+    self.list_of_titles<<title
     self.total = self.total + (price * quantity)
     # @titles << title
     # @prices << price
