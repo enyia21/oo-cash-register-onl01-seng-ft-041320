@@ -40,7 +40,9 @@ class CashRegister
       "After the discount, the total comes to $#{self.total.to_i}."
     end
   end
-
+  def items
+    @items
+  end
   def void_last_transaction
 
     self.total = self.total - (self.quantities.last)*(self.prices.last)
