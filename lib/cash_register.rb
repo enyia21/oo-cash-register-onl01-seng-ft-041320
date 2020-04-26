@@ -30,9 +30,9 @@ class CashRegister
       "After the discount, the total comes to $#{self.total.to_i}."
     end
   end
-  
+
   # def items
-  #   
+  #
   # end
   # def describe
   #   @total = 0
