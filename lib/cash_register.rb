@@ -32,7 +32,7 @@ class CashRegister
   end
 
   def items
-  
+
   end
   # def describe
   #   @total = 0
