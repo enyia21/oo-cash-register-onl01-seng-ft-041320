@@ -18,10 +18,10 @@ class CashRegister
     titles << title
     prices << price
     quantities << quantity
-    
+
     self.total = self.total + (price * quantity)
-    
-    
+
+
   end
   # def describe
   #   @total = 0
