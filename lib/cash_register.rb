@@ -1,10 +1,11 @@
 class CashRegister
 
-  attr_accessor :discount, :total
+  attr_accessor :discount, :total, :last_transation
 
-  @titles = []
-  @prices = []
-  @quantities = []
+  @title = ""
+  @price = 0
+  @quantity = 0
+  
   def initialize(discount=0)
     @total = 0
     self.discount = discount
@@ -14,12 +15,15 @@ class CashRegister
     @total
   end
 
-
   def add_item(title, price, quantity=1)
     self.total = self.total + (price * quantity)
     # @titles << title
   end
-
+  def last_transation(title, price, quantity)
+    @title = title
+    @price = price
+    @quantity = quantity
+  end
   def apply_discount
     if discount == 0
       "There is no discount to apply."
