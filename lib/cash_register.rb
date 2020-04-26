@@ -2,9 +2,9 @@ class CashRegister
 
   attr_accessor :discount, :total, :last_transation
 
-  @title = ""
-  @price = 0
-  @quantity = 0
+  @titles = []
+  @prices = []
+  @quantities = []
 
   def initialize(discount=0)
     @total = 0
@@ -22,9 +22,9 @@ class CashRegister
   end
 
   def last_transation(title, price, quantity)
-    @title = title
-    @price = price
-    @quantity = quantity
+    @titles << title
+    @prices << price
+    @quantities << quantity
   end
 
   def apply_discount
@@ -35,13 +35,9 @@ class CashRegister
       "After the discount, the total comes to $#{self.total.to_i}."
     end
   end
-  #
-  # def items
-  #
-  # end
-  # def describe
-  #   @total = 0
-  # end
 
+  def void_last_transaction
+    
+  end
 end
 #
