@@ -9,7 +9,7 @@ class CashRegister
     @items = []
     @prices = []
     # @quantities = Array.new
-    
+
     self.discount = discount
   end
 
