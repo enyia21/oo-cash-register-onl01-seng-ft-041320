@@ -20,11 +20,13 @@ class CashRegister
     self.total = self.total + (price * quantity)
     # @titles << title
   end
+  
   def last_transation(title, price, quantity)
     @title = title
     @price = price
     @quantity = quantity
   end
+  
   def apply_discount
     if discount == 0
       "There is no discount to apply."
