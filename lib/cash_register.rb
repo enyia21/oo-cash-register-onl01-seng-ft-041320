@@ -1,6 +1,6 @@
 class CashRegister
 
-  attr_accessor :discount, :total, :list_of_titles, :list_of_quantities
+  attr_accessor :discount, :total
 
   @titles = []
   @prices = []
@@ -14,22 +14,8 @@ class CashRegister
     @total
   end
 
-  def list_of_titles
-    @titles
-  end
-
-  def list_of_prices
-    @prices
-  end
-
-  def list_of_quantities
-    @quantities
-  end
 
   def add_item(title, price, quantity=1)
-    list_of_titles(title)
-    # self.list_of_prices << price
-    # self.list_of_quantities << quantities
     self.total = self.total + (price * quantity)
     # @titles << title
   end
