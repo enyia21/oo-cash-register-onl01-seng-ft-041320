@@ -25,7 +25,7 @@ class CashRegister
   def list_of_quantities
     @quantities
   end
-  
+
   def add_item(title, price, quantity=1)
     self.list_of_titles << title
     self.list_of_prices << price
