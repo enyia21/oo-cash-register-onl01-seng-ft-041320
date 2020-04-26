@@ -3,12 +3,13 @@ class CashRegister
   attr_accessor :discount, :total, :last_transation
 
   # @titles = Array.new
-  # @prices = Array.new
-  # @quantities = Array.new
 
   def initialize(discount=0)
     @total = 0
     @items = []
+    @prices = []
+    # @quantities = Array.new
+    
     self.discount = discount
   end
 
