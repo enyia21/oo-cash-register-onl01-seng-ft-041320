@@ -8,7 +8,7 @@ class CashRegister
     @total = 0
     @items = []
     @prices = []
-    # @quantities = Array.new
+    @quantities = Array.new
 
     self.discount = discount
   end
@@ -20,6 +20,8 @@ class CashRegister
   def add_item(title, price, quantity=1)
     # self.last_transation(title, price, quantity)
     @items << title
+    @prices << price
+    @quantities << quantity
     self.total = self.total + (price * quantity)
     # @titles << title
   end
